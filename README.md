@@ -8,7 +8,7 @@ A Streamlit-based application that simplifies insurance clauses and generates dr
 - Choose between two processing modes:
   - **Simplify**: Converts complex policy language into plain language
   - **Draft**: Creates a structured document based on policy clauses
-- Process text using Google's Flan-T5 NLP model
+- Process text using Mistral 7B Instruct model
 - Display generated output based on selected mode
 - Collect user feedback on results
 - Download processed text as a file
