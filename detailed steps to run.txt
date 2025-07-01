@@ -1,0 +1,58 @@
+# Policy Document Explainer - Setup and Running Instructions
+
+## Prerequisites
+- Python 3.11 or higher
+- Git (optional)
+
+## Setup Steps
+
+1. Extract the ZIP file to a folder (e.g., 'policy_explainer')
+
+2. Open Command Prompt/Terminal and run these commands:
+
+```bash
+# Navigate to project folder
+cd path/to/policy_explainer
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# For Windows:
+venv\Scripts\activate
+# For Mac/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install streamlit
+pip install ctransformers
+pip install huggingface-hub
+```
+
+3. Run the application:
+```bash
+streamlit run policy_explainer.py
+```
+
+## Using the Application
+- The app will open in your default web browser
+- Two main features:
+  - Simplify: Converts complex policy language into simpler terms
+  - Draft: Creates structured documents from policy text
+- Input methods:
+  - Paste text directly
+  - Upload text/PDF files
+- Click "Generate Output" to process
+- Download results as text files
+
+## Troubleshooting
+- Ensure Python 3.11+ is installed
+- Verify all dependencies are installed
+- Check internet connection (required for first run)
+- Ensure 8GB+ RAM available
+- First run will take longer (model download ~4GB)
+
+## Notes
+- First run requires internet connection
+- Model is cached locally after first download
+- Minimum 8GB RAM recommended
